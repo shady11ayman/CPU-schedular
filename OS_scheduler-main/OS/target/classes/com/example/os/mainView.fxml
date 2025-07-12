@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.os.HelloController">
+   <children>
+      <VBox alignment="CENTER" layoutX="129.0" layoutY="260.0" prefHeight="200.0" prefWidth="128.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#switchToScene2" style="-fx-background-color: white; -fx-border-color: black;" text="FCFS" />
+            <Button mnemonicParsing="false" onMouseClicked="#swtichToRR" prefWidth="128.0" style="-fx-background-color: white; -fx-border-color: black;" text="Round-Robin" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="278.0" layoutY="260.0" prefHeight="200.0" prefWidth="177.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#switchToPremSJF" style="-fx-background-color: white; -fx-border-color: black;" text="SJF (Preemative)" />
+            <Button mnemonicParsing="false" onMouseClicked="#swtichToPremPrio" prefHeight="31.0" prefWidth="162.0" style="-fx-background-color: white; -fx-border-color: black;" text="Priority (Preemative)" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="468.0" layoutY="260.0" prefHeight="200.0" prefWidth="203.0" spacing="50.0">
+         <children>
+            <Button mnemonicParsing="false" onMouseClicked="#switchToNonPremSJF" style="-fx-background-color: white; -fx-border-color: black;" text="SJF (Non-Preemative)" />
+            <Button mnemonicParsing="false" onMouseClicked="#swtichToNonPremPrio" style="-fx-background-color: white; -fx-border-color: black;" text="Priority (Non-Preemative)" />
+         </children>
+      </VBox>
+      <Label layoutX="206.0" layoutY="180.0" prefHeight="60.0" prefWidth="373.0" text="Choose the scheduler you want :" textAlignment="CENTER">
+         <font>
+            <Font name="Arabic Typesetting" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
